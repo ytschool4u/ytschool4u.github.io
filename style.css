@@ -74,7 +74,7 @@ img {
 
 .cta {
 
-    
+    text-align: center;
 
     background-color: rgba(138, 148, 254, 1);
 
@@ -132,7 +132,7 @@ header {
 
     flex-wrap: wrap;
 
-    padding: 1.5rem;
+    padding: 1rem;
 
     align-items: center;
 
@@ -434,11 +434,11 @@ header {
 
     backdrop-filter: blur(20px);
 
-    margin: 0 1rem;
+    margin: 0 .5rem;
 
     border-radius: 20px;
 
-    padding: 2rem;
+    padding: 1rem;
 
 }
 
@@ -448,9 +448,9 @@ header {
 
     line-height: 1.3;
 
-    width: 90%;
+    width:100%;
 
-    font-size: 2rem;
+    font-size: 1.2rem;
 
     color: #dadada69;
 
@@ -576,11 +576,11 @@ min-height: 100vh;
 
     padding-top: 10px;
 
-    font-size: 25px;
+    font-size: 1rem;
 
     font-weight: 700;
 
-    line-height: 1.5rem;
+    line-height: 1.3;
 
     color: #3d3d3d;
 
@@ -594,7 +594,7 @@ min-height: 100vh;
 
     display: flex;
 
-    justify-content: space-between;
+    justify-content: space-evenly;
 
     border-top: 1px solid #ddd;
 
@@ -606,11 +606,35 @@ min-height: 100vh;
 
 .paragraph-3 {
 
-    font-size: 1.3em;
+    font-size: 1em;
 
     color: #3d3d3d;
 
     width: 100%;
+
+   
+
+}
+
+
+
+.paragraph-3:nth-child(1){
+
+text-align: left;
+
+}
+
+
+
+
+
+.paragraph-3:nth-child(2){
+
+
+
+text-align: right;
+
+
 
 }
 
@@ -622,7 +646,7 @@ min-height: 100vh;
 
     text-align: center;
 
-    margin-top: 10px;
+    margin-top: .5rem;
 
     color: rgba(138, 148, 254, .8);
 
@@ -634,7 +658,7 @@ min-height: 100vh;
 
 .div-block .paragraph-2{
 
- min-height: 60px;
+ min-height: 50px;
 
  max-width: 100%;
 
@@ -662,7 +686,7 @@ width: 100%;}
 
     backdrop-filter: blur(20px);
 
-    padding: 25px 25px 50px 25px;
+    padding: 1rem;
 
     border-radius: 20px;
 
@@ -674,7 +698,9 @@ width: 100%;}
 
     border: 2px solid #ddd;
 
-    max-width: 35%;
+    max-width: 30%;
+
+    min-width: 30%;
 
         box-shadow: 0 0 6px 3px #5662E357;
 
@@ -886,9 +912,9 @@ i{
 
     grid-template-columns: 1fr 1fr 1fr;
 
-    gap: 2rem;
+    gap: 1rem;
 
-    padding: 30px;
+    padding: 20px;
 
     justify-content: center;
 
@@ -900,7 +926,7 @@ i{
 
 .review-box{
 
-    padding: 25px;
+    padding: 25px 15px;
 
     border-radius: 15px;
 
@@ -924,9 +950,9 @@ i{
 
 }
 
-.review-box p{
+.review-box {
 
-margin-top: 20px;
+margin-top: 10px;
 
 }
 
@@ -934,11 +960,15 @@ margin-top: 20px;
 
     width: 100%;
 
+    line-height: 1;
+
 }
 
 .user{
 
     width: 70px;
+
+    margin-bottom: .5rem;
 
 }
 
@@ -964,13 +994,13 @@ justify-content: space-between;
 
 font-family: nb;
 
-padding: 2rem;
+padding: 15px;
 
 }
 
 .thin-h{
 
- font-size: 2rem;
+ font-size: 1.6rem;
 
  font-weight: 300;
 
@@ -982,7 +1012,7 @@ padding: 2rem;
 
 .bold-h{
 
- font-size: 2.5rem;
+ font-size: 2rem;
 
  text-align: center;
 
@@ -990,7 +1020,7 @@ padding: 2rem;
 
 .thin-p{
 
- font-size: 1.5rem;
+ font-size: 1.2rem;
 
  text-align: center;
 
@@ -1002,13 +1032,13 @@ padding: 2rem;
 
 .normal-p{
 
- font-size: 1.2rem;
+ font-size: 1rem;
 
  font-weight: 300;
 
  color: #fff;
 
- padding: 1rem;
+ margin-top: 20px; 
 
  
 
@@ -1044,7 +1074,7 @@ padding: 2rem;
 
 #name-temp{
 
-padding: 25px;
+padding: 1rem;
 
 backdrop-filter: blur(20px);
 
@@ -1068,7 +1098,7 @@ box-shadow: 0 0 20px #ddd;
 
 .footer {
 
-    padding: 20px;
+    padding: 10px;
 
     backdrop-filter: blur(5px);
 
@@ -1080,7 +1110,7 @@ box-shadow: 0 0 20px #ddd;
 
 .div-block-19 {
 
-    width: 90%;
+    width: 95%;
 
     justify-content: space-between;
 
@@ -1168,9 +1198,11 @@ box-shadow: 0 0 20px #ddd;
 
 .copyright-cotaniner {
 
-    width: 90%;
+    width: 95%;
 
     display: flex;
+
+    gap: 1rem;
 
     justify-content: space-around;
 
@@ -1226,6 +1258,10 @@ box-shadow: 0 0 20px #ddd;
 
  max-width: 100%;
 
+     min-width:100%;
+
+
+
  }
 
  .copyright-cotaniner {
@@ -1264,7 +1300,7 @@ box-shadow: 0 0 20px #ddd;
 
    max-height: 40vh;
 
-   max-width: 80%;
+   max-width: 100%;
 
  }
 
