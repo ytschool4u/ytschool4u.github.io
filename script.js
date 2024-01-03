@@ -205,7 +205,7 @@ function loadCourse() {
                                                            <p class="paragraph-3"><i class="fa-solid fa-rupee-sign"></i> :  ${course.mode === 'free' ? 'Free' : `${course.dPrice}`}</p>
                                                            <p class="paragraph-3"><i class="fa-regular fa-clock"></i> : 2 Hours/ Day</p>
                                                        </div>
-                                                       <a href="/course/?id=${course.id}" target="_blank" class="border-cta full-width w-button">Enroll Now</a>
+                                                       <a href="https://YTSchool.in/course?id=${course.id}" target="_blank" class="border-cta full-width w-button">Enroll Now</a>
                                          `;
 
    allContainer.appendChild(courseElement);
