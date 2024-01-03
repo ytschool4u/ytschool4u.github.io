@@ -41,7 +41,7 @@
     document.querySelector('#c-name').innerText = course.name;
     document.querySelector('#c-price').innerHTML = `<i class="fa-solid fa-rupee-sign"></i> : ${course.mode === 'free' ? 'Free' : `${course.dPrice}`}`;
     document.querySelector('#des').innerHTML = `${course.description}`;
-    document.querySelector('#enroll').innerHTML= `<a href='${course.pLink1}'>Enroll Now<\a>`;
+    document.querySelector('#enroll').innerHTML= `<a class="border-cta full-width" href='${course.pLink1}'>Enroll Now<\a>`;
    document.querySelector('#c-title').innerText = course.name;
     // ... Update other elements as needed
    } else {
