@@ -650,7 +650,9 @@ min-height: 100vh
 
 
 #enroll{
+ text-align: center;
 width:100%;
+display: flex;
 }
 
 #c-right{
