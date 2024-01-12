@@ -20,10 +20,11 @@
  const queryString = window.location.search;
  const urlParams = new URLSearchParams(queryString);
  const courseId = urlParams.get('id');
+ const refId = urlParams.get('referral');
  
  const cMainContainer = document.getElementById('c-main');
  const allContainer = document.getElementById('all');
- const loadingText = document.getElementById('loadingText');
+ const loadingText = document.getElementById('loadbox');
  
  // Function to load data based on ID
  function loadDataById(courseId) {
@@ -42,6 +43,15 @@
     document.querySelector('#c-price').innerHTML = `<i class="fa-solid fa-rupee-sign"></i> : ${course.mode === 'free' ? 'Free' : `${course.dPrice}`}`;
     document.querySelector('#des').innerHTML = `${course.description}`;
     document.querySelector('#enroll').innerHTML= `<a class="border-cta full-width" href='${course.pLink1}'>Enroll Now<\a>`;
+// if user has a referal code
+    if(refId){
+console.log("he has a refer code `${refId}`")
+    }
+    else{
+      console.log("he has not any refer code `${refId}`")
+
+    }
+
    document.querySelector('#c-title').innerText = course.name;
     // ... Update other elements as needed
    } else {
@@ -56,7 +66,7 @@
  // Check if courseId has a value
  if (courseId) {
   // courseId has a value, hide 'all-course', show 'c-main'
-  cMainContainer.style.display = 'block';
+  cMainContainer.style.display = 'grid';
  
  
  
@@ -67,7 +77,7 @@
   cMainContainer.style.display = 'none';}
  
   // Show loading text while fetching data
-  loadingText.style.display = 'block';
+  loadingText.style.display = 'grid';
  
   // Fetch and display courses
   coursesRef.once('value', function(snapshot) {
@@ -88,10 +98,11 @@
            <p class="paragraph-3"><i class="fa-solid fa-rupee-sign"></i> : ${course.mode === 'free' ? 'Free' : `${course.dPrice}`}</p>
            <p class="paragraph-3"><i class="fa-regular fa-clock"></i> : 2 Hours/ Day</p>
          </div>
-         <a href="https://YTSchool.in/course?id=${course.id}" target="_blank" class="border-cta full-width w-button">Enroll Now</a>
+         <div onclick="window.location.href='https://YTSchool.in/course/?id=${course.id}'" class="border-cta full-width w-button">Enroll Now</div>
        `;
  
     allContainer.appendChild(courseElement);
    }
   });
  
+
