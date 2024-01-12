@@ -706,10 +706,11 @@ display: flex;
  background: #7780E5BA;
 }
 #des *{
-    font-size: 2em;
+    font-size: 2rem;
     line-height: 1.8em;
     font-family: 'Courier New', Courier, monospace !important;
-
+    text-decoration: none;
+    list-style: none;
    }
 @media (max-width:800px){
  .grid-8{
@@ -762,7 +763,7 @@ display: flex;
  }
    #des *{
     font-size: .9em;
-    font-family: 'Courier New', Courier, monospace !important;
+    line-height: 1.5em;
 
    }
 }
