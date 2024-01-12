@@ -17,7 +17,23 @@
     font-family: rejouice;
     text-decoration: none;
     color: #f1f1f1;
+    -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      text-rendering: optimizeSpeed;
 }
+*:focus {
+    outline: none;
+  }
+
+
 
 html,
 body {
@@ -185,6 +201,30 @@ header {
     cursor: pointer;
         color: rgba(138, 148, 254, .8);
 
+}
+
+.load{
+    padding: 1rem;
+    border: 5px solid rgba(138, 148, 254, 1);
+    border-left-color: transparent;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50px;
+    animation: loading 0.3s infinite;
+    margin: auto;
+}
+@keyframes loading {
+    100%{
+        rotate: 360deg;
+    }
+}
+#loadbox{
+    height: max-content;
+    padding: 1rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 
@@ -632,16 +672,15 @@ min-height: 100vh
 
 #c-left{
  width:100%;
- display:flex;
+ display:block;
  flex-wrap: wrap;
- gap :0;
  align-items: center;
   padding: 1rem;
 
 }
 
 #c-name{
- font-size: 1.5rem;
+    font-size: 5rem;
  margin-bottom: .5rem;
  color: #3d3d3d;
  font-weight: 700;
@@ -666,12 +705,12 @@ display: flex;
  border-radius: 15px;
  background: #7780E5BA;
 }
-#des{
- font-size: .8em;
-}
-#des h1, #des h2, #des h3{
- font-size: .9em
-}
+#des *{
+    font-size: 2em;
+    line-height: 1.8em;
+    font-family: 'Courier New', Courier, monospace !important;
+
+   }
 @media (max-width:800px){
  .grid-8{
     display: flex;
@@ -717,5 +756,14 @@ display: flex;
  #c-top{
   grid-template-columns: 1fr;
  }
+ #c-name{
+ font-size: 1.5rem;
+
+ }
+   #des *{
+    font-size: .9em;
+    font-family: 'Courier New', Courier, monospace !important;
+
+   }
 }
 
