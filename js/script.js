@@ -87,7 +87,6 @@ window.addEventListener('DOMContentLoaded', () => {
       start: "top 80%",
       end: "bottom 90%",
       scrub: 2,
-      markers:true
     }
   });
 
