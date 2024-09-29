@@ -67,12 +67,12 @@ window.addEventListener('DOMContentLoaded', () => {
     duration: 1,
     filter: 'blur(5px)',
     y: 100,
-    ease: "power4",
+    ease: "power2",
     scrollTrigger: {
       trigger: "#ac-top",
-      start: "top 90%",
+      start: "top 100%",
       end: "top 20%",
-      scrub: 3
+      scrub: 2
     }
   });
 
@@ -116,14 +116,14 @@ window.addEventListener('DOMContentLoaded', () => {
     button.addEventListener("mouseenter", () => {
       gsap.to(bt1.querySelectorAll('.char'), {
         duration: 0.5,
-        y: -20,
+        y: '-100%',
         stagger: 0.05,
         ease: "power2.out"
       });
 
       gsap.to(bt2.querySelectorAll('.char'), {
         duration: 0.5,
-        y: -20,
+        y: '-100%',
         stagger: 0.05,
         ease: "power2.out"
       });
@@ -147,4 +147,27 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-});
+
+  var mySwiper = new Swiper('.reviews-slider', {
+      speed: 800,
+      slidesPerView: 3,
+      spaceBetween: 40,
+      loop:true,
+
+      // Responsive breakpoints
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
+        480: {
+          slidesPerView: 2,
+          spaceBetween: 30
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 30
+        }
+      }
+    });
+  });
