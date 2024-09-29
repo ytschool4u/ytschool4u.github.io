@@ -1,21 +1,21 @@
 @font-face {
     font-family: 'nml';
-    src: url('assets/fonts/NeueMachina-Light.otf');
+    src: url('../assets/fonts/NeueMachina-Light.otf');
 }
 
 @font-face {
     font-family: 'nmr';
-    src: url('assets/fonts/NeueMachina-Regular.otf');
+    src: url('../assets/fonts/NeueMachina-Regular.otf');
 }
 
 @font-face {
     font-family: 'kh';
-    src: url('assets/fonts/Khaviax.otf');
+    src: url('../assets/fonts/Khaviax.otf');
 }
 
 @font-face {
     font-family: 'jn';
-    src: url('assets/fonts/Fontspring-DEMO-juana-light.otf');
+    src: url('../assets/fonts/Fontspring-DEMO-juana-light.otf');
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
@@ -153,7 +153,7 @@ img {
     display: flex;
     flex-direction: column;
     position: relative;
-    background-image: url("assets/img/batthern.png");
+    background-image: url("../assets/img/batthern.png");
 
 }
 
@@ -417,7 +417,7 @@ img {
     background-color: #FF3F33;
     border-radius: 2vw;
     padding: 2vw;
-    background-image: url(assets/img/batthern.png);
+    background-image: url(../assets/img/batthern.png);
     position: relative;
 
 }
@@ -685,7 +685,7 @@ img {
     padding: 4vw 2vw;
     margin: 0vw 6vw;
     border-radius: 2vw;
-    background-image: url('/assets/img/batthern.png');
+    background-image: url('../assets/img/batthern.png');
 }
 
 .cta-left {
