@@ -63,30 +63,27 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
   // Scroll-triggered animation for #ac-top
-  gsap.from("#ac-top", {
-    duration: 1,
+  gsap.from("#ac-top *", {
+    duration: 0.5,
+    stagger:0.01,
     filter: 'blur(5px)',
     y: 100,
-    ease: "power2",
     scrollTrigger: {
       trigger: "#ac-top",
-      start: "top 100%",
-      end: "top 20%",
-      scrub: 2
+      start: 'top bottom',
     }
   });
 
   // Scroll-triggered CTA section animation
   gsap.from(".cta *", {
     y: 50,
-    duration: 1,
+    stagger:0.01,
+    duration: 0.5,
     ease: "none",
     filter: 'blur(2px)',
     scrollTrigger: {
       trigger: ".cta",
-      start: "top 80%",
-      end: "bottom 90%",
-      scrub: 2,
+      start: 'top bottom',
     }
   });
 
