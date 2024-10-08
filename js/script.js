@@ -153,7 +153,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
       // Responsive breakpoints
       breakpoints: {
-        320: {
+        200: {
           slidesPerView: 1,
           spaceBetween: 20
         },
@@ -161,7 +161,7 @@ window.addEventListener('DOMContentLoaded', () => {
           slidesPerView: 2,
           spaceBetween: 30
         },
-        768: {
+        800: {
           slidesPerView: 3,
           spaceBetween: 30
         }
