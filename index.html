@@ -21,10 +21,10 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.ytschool.in" />
-    <meta property="og:image" content="assets/images/og-image.jpg" />
+    <!-- <meta property="og:image" content="assets/images/og-image.jpg" /> -->
 
     <!-- Twitter Card data -->
-    <meta name="twitter:card" content="summary_large_image" />
+    <!-- <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
       content="YTSchool | Learn Tech Skills & Build Your Digital Future"
@@ -33,7 +33,7 @@
       name="twitter:description"
       content="Start your tech career with YTSchool. Learn web development, graphic design, digital marketing, and more from experts. Join us today!"
     />
-    <meta name="twitter:image" content="assets/images/twitter-image.jpg" />
+    <meta name="twitter:image" content="assets/images/twitter-image.jpg" /> -->
 
     <!-- Favicon and Icons -->
     <link
@@ -60,8 +60,11 @@
       color="#5bbad5"
     />
 
-<!-- SEARCH Console -->
-<meta name="google-site-verification" content="slrON7dkNVqbmNmyl06R2SBnnlpHlWRAS2T4dMoAvUw" />
+    <!-- SEARCH Console -->
+    <meta
+      name="google-site-verification"
+      content="slrON7dkNVqbmNmyl06R2SBnnlpHlWRAS2T4dMoAvUw"
+    />
 
     <!-- FontAwesome -->
     <link
@@ -80,7 +83,7 @@
       <div id="page1">
         <div id="nav">
           <div id="nav-left">
-            <div id="logo">
+            <div id="logo" onclick="location.href='/'">
               <img src="assets/img/logo.png" alt="" /> YTSchool
             </div>
           </div>
@@ -142,9 +145,10 @@
         </div>
         <div id="hero-btm">
           <h3>+500 Alumni since 2024</h3>
-          <a href="#courses">
-            <div id="scroll1"><i class="ri-mouse-line"></i></div
-          ></a>
+
+          <div>
+            <a id="scroll1" href="#courses"><i class="ri-mouse-line"></i></a>
+          </div>
         </div>
       </div>
 
@@ -307,7 +311,7 @@
                   <div class="count">01</div>
                 </div>
               </div>
-              <div class="acp">
+              <div class="acp acp2">
                 <div>
                   <h3>Private Community</h3>
                   <p>
@@ -352,11 +356,12 @@
               </div>
             </div>
             <div id="ac-btm-part2">
-              <img src="assets/img/imgw.webp" alt="" />
+              <img src="assets/img/imgw.png" alt="" />
             </div>
 
             <div id="scroll-progress">
-              <svg
+              <div class="spl"></div>
+              <!-- <svg
                 viewBox="0 0 300 300"
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -378,7 +383,7 @@
                     Scroll Down | Scroll Down | Scroll Down | Scroll Down |
                   </textPath>
                 </text>
-              </svg>
+              </svg> -->
             </div>
           </div>
         </div>
@@ -459,7 +464,7 @@
             <h3>Well, well—you’ve scrolled all the way!</h3>
           </div>
           <div><h1>Time to do something epic with that energy.</h1></div>
-          <button class="button3">Join the Revolution!</button>
+          <button class="button3" onclick="location.href='/courses.html'">Join the Revolution!</button>
         </div>
         <div class="cta-right">
           <img src="assets/img/ctaimg.webp" alt="" />
@@ -521,5 +526,5 @@
     <script src="js/plugins/ScrollTrigger.min.js"></script>
     <script src="js/plugins/swiper.min.js"></script>
     <script src="js/script.js"></script>
-  </body>
+</body>
 </html>
