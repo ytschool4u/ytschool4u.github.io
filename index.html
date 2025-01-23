@@ -77,10 +77,17 @@
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/home.css" />
   </head>
   <body>
     <div id="main">
+
+
       <div id="page1">
+        <div class="blocks-container">
+          <div id="blocks"></div>
+        </div>
+        
         <div id="nav">
           <div id="nav-left">
             <div id="logo" onclick="location.href='/'">
@@ -88,11 +95,8 @@
             </div>
           </div>
           <div id="nav-right">
-            <div class="button1">
-              <div>
-                <h3 class="bt1">Contact us</h3>
-                <h3 class="bt2">Contact us</h3>
-              </div>
+            <div class="button1" onclick="window.location='https://wa.me/917361072654'">
+              <h3>Contact us</h3>
             </div>
           </div>
         </div>
@@ -125,7 +129,9 @@
           </svg>
 
           <h1>🔥Build cool sh*t with a career you love.</h1>
-          <div class="button2">Start your journey today →</div>
+          <div class="button2" onclick='window.location="./#courses"'>
+            Start your journey today →
+          </div>
 
           <svg
             class="svg2"
@@ -145,9 +151,10 @@
         </div>
         <div id="hero-btm">
           <h3>+500 Alumni since 2024</h3>
-
           <div>
-            <a id="scroll1" href="#courses"><i class="ri-mouse-line"></i></a>
+            <a id="scroll1" href="#courses"
+              ><i class="ri-mouse-line magnetic-button"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -191,10 +198,30 @@
           <div class="course-warper">
             <a href="#" class="course">
               <div class="c-img">
-                <img
-                  src="https://html.hixstudio.net/educal/educal/assets/img/course/details/course-details-1.jpg"
-                  alt=""
-                />
+                <img src="./assets/img/Frontend.png" alt="" />
+              </div>
+              <div class="course-body">
+                <div class="cd-top">
+                  <h4><i class="ri-book-line"></i> 43 Lesson</h4>
+                  <h4><i class="ri-star-fill"></i> 4.5 (44)</h4>
+                </div>
+                <div class="cd-title">
+                  <h2>Become a Frontend developer- Zero To Web Hero.</h2>
+                </div>
+              </div>
+              <div class="cd-btm">
+                <div class="cd-inst">By <span>Jim Séchen</span></div>
+                <div class="cd-price">₹<span>399</span></div>
+              </div>
+            </a>
+            <div class="cd-btn">
+              <h3>Enroll Now</h3>
+            </div>
+          </div>
+          <div class="course-warper">
+            <a href="#" class="course">
+              <div class="c-img">
+                <img src="./assets/img/chatgpt.png" alt="" />
               </div>
               <div class="course-body">
                 <div class="cd-top">
@@ -217,36 +244,7 @@
           <div class="course-warper">
             <a href="#" class="course">
               <div class="c-img">
-                <img
-                  src="https://html.hixstudio.net/educal/educal/assets/img/course/details/course-details-1.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="course-body">
-                <div class="cd-top">
-                  <h4><i class="ri-book-line"></i> 43 Lesson</h4>
-                  <h4><i class="ri-star-fill"></i> 4.5 (44)</h4>
-                </div>
-                <div class="cd-title">
-                  <h2>Become a product Manager learn the skills & job.</h2>
-                </div>
-              </div>
-              <div class="cd-btm">
-                <div class="cd-inst">By <span>Jim Séchen</span></div>
-                <div class="cd-price">₹<span>399</span></div>
-              </div>
-            </a>
-            <div class="cd-btn">
-              <h3>Enroll Now</h3>
-            </div>
-          </div>
-          <div class="course-warper">
-            <a href="#" class="course">
-              <div class="c-img">
-                <img
-                  src="https://html.hixstudio.net/educal/educal/assets/img/course/details/course-details-1.jpg"
-                  alt=""
-                />
+                <img src="./assets/img/Frontend.png" alt="" />
               </div>
               <div class="course-body">
                 <div class="cd-top">
@@ -404,53 +402,50 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="rs-main">
-                <h5 class="rs-name">Sarah Newman</h5>
-                <p class="rs-pos">Envato market</p>
+                <h5 class="rs-name">Aarav Sharma</h5>
+                <p class="rs-pos">Web Development Student</p>
                 <p class="rs-text">
-                  This creative agency stands out with their exceptional talent
-                  and expertise. Their ability to think outside the box and
-                  bring unique ideas to life is truly impressive. With
-                  meticulous attention to detail, they consistently deliver
-                  visually stunning and impactful work.
+                  The web development course at YTSchool was excellent. The
+                  instructors made complex concepts easy to understand, and the
+                  hands-on projects helped me build real-world skills. Highly
+                  recommend it for anyone looking to enhance their web
+                  development skills!
                 </p>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="rs-main">
-                <h5 class="rs-name">Emma Trueman</h5>
-                <p class="rs-pos">Envato market</p>
+                <h5 class="rs-name">Priya Reddy</h5>
+                <p class="rs-pos">Graphic Design Student</p>
                 <p class="rs-text">
-                  I had the pleasure of working with this creative agency, and I
-                  must say, they truly impressed me. They consistently think
-                  outside the box, resulting in impressive and impactful work. I
-                  highly recommend this agency for their consistent delivery of
-                  exceptional creative solutions.
+                  YTSchool's graphic design course is top-notch. The trainers
+                  are skilled, and the lessons are both engaging and
+                  informative. I’m now ready to pursue a career in design,
+                  thanks to the tools and techniques I learned!
                 </p>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="rs-main">
-                <h5 class="rs-name">Sarah Newman</h5>
-                <p class="rs-pos">Envato market</p>
+                <h5 class="rs-name">Ravi Patel</h5>
+                <p class="rs-pos">ChatGPT Course Graduate</p>
                 <p class="rs-text">
-                  This creative agency stands out with their exceptional talent
-                  and expertise. Their ability to think outside the box and
-                  bring unique ideas to life is truly impressive. With
-                  meticulous attention to detail, they consistently deliver
-                  visually stunning and impactful work.
+                  The ChatGPT course was amazing! It gave me a solid
+                  understanding of AI and natural language processing. The
+                  course content was easy to follow, and I learned real-world
+                  applications. A must for anyone interested in AI!
                 </p>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="rs-main">
-                <h5 class="rs-name">Emma Trueman</h5>
-                <p class="rs-pos">Envato market</p>
+                <h5 class="rs-name">Simran Kaur</h5>
+                <p class="rs-pos">Frontend Student</p>
                 <p class="rs-text">
-                  I had the pleasure of working with this creative agency, and I
-                  must say, they truly impressed me. They consistently think
-                  outside the box, resulting in impressive and impactful work. I
-                  highly recommend this agency for their consistent delivery of
-                  exceptional creative solutions.
+                  YTSchool’s courses in web development and graphic design have
+                  been a game-changer. The hands-on training and portfolio
+                  building have made me confident in my skills. I'm now ready to
+                  take on freelance projects or full-time roles.
                 </p>
               </div>
             </div>
@@ -464,7 +459,9 @@
             <h3>Well, well—you’ve scrolled all the way!</h3>
           </div>
           <div><h1>Time to do something epic with that energy.</h1></div>
-          <button class="button3" onclick="location.href='/courses.html'">Join the Revolution!</button>
+          <button class="button3" onclick="location.href='/courses.html'">
+            Join the Revolution!
+          </button>
         </div>
         <div class="cta-right">
           <img src="assets/img/ctaimg.webp" alt="" />
@@ -476,26 +473,30 @@
           <div id="footer-left">
             <div id="fl-logo">
               <!-- <h1>YTSchool</h1> -->
-              <img src="assets/img/black.png" alt="" />
+              <img
+                onclick="window.location='./'"
+                src="assets/img/black.png"
+                alt=""
+              />
             </div>
           </div>
           <div id="footer-right">
             <div id="fl-links">
               <h3>Pages</h3>
               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="./">Home</a></li>
+                <li><a href="./#courses">Courses</a></li>
+                <li><a href="./#about">About</a></li>
+                <li><a href="https://wa.me/917361072654">Contact</a></li>
               </ul>
             </div>
 
             <div id="fr-social">
               <h3>Social Media</h3>
               <ul>
-                <li>
+                <!-- <li>
                   <a href="#"><i class="ri-facebook-fill"></i> Facebook</a>
-                </li>
+                </li> -->
                 <li>
                   <a href="#"><i class="ri-instagram-fill"></i> Instagram</a>
                 </li>
@@ -512,19 +513,25 @@
       </div>
 
       <div id="copyright">
-        <p>&copy; 2024 YTSchool. All rights reserved.</p>
+        <p>&copy; 2025 YTSchool. All rights reserved.</p>
 
         <div id="legal">
-          <a href="#">Terms & Conditions</a> |
-          <a href="#">Privacy Policy</a>
+            <a href="./terms-and-service">Terms & Conditions</a> |
+            <a href="./privacy-policy">Privacy Policy</a> |
+            <a href="./refund-policy">Refund Policy</a>
         </div>
       </div>
     </div>
 
     <!-- GSAP & Scroll Trigger -->
-    <script src="js/plugins/gsap.min.js"></script>
-    <script src="js/plugins/ScrollTrigger.min.js"></script>
-    <script src="js/plugins/swiper.min.js"></script>
-    <script src="js/script.js"></script>
-</body>
+    <script src="./js/plugins/gsap.min.js"></script>
+    <script src="./js/plugins/ScrollTrigger.min.js"></script>
+    <script src="./js/plugins/swiper.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/home.js"></script>
+
+
+<noscript><a href="https://wa.me/917361072654" rel="nofollow">Chat with us</a>, powered by <a href="https://www.ytschool.in" rel="noopener nofollow" target="_blank">YTSchool</a></noscript>
+
+  </body>
 </html>

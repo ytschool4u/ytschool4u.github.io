@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@font-face {
+  font-family: "nml";
+  src: url("../assets/fonts/NeueMachina-Light.otf");
+}
+
+@font-face {
+  font-family: "nmr";
+  src: url("../assets/fonts/NeueMachina-Regular.otf");
+}
+
+@font-face {
+  font-family: "kh";
+  src: url("../assets/fonts/Khaviax.otf");
+}
+
+@font-face {
+  font-family: "jn";
+  src: url("../assets/fonts/Fontspring-DEMO-juana-light.otf");
+}
+
+#course-details{
+    padding: 2vw 6vw;
+    font-family: 'inter', sans-serif;
+}
+
+
+#cd-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2vw;
+    margin-bottom: 2vw;
+}
+
+
+#cd-features{
+    flex: 1 1 40%;
+}
+
+
+#cd-title{
+    font-family: 'inter', sans-serif;
+    font-size: 1.8vw;
+    font-weight: 100;
+    text-transform:capitalize;
+}
+
+#cd-cat{
+    display: flex;
+    flex-wrap: wrap;
+gap: 0.5vw;
+font-family: 'inter', sans-serif;
+margin: 1vw 0;
+}
+#cd-cat h6{
+    display: flex;
+    gap: 0.5vw;
+    align-items: center;
+    padding: 0.5vw 1vw;
+    background-color: #111;
+    color: #ddd;
+    border-radius: 50px;
+    font-size: 0.8vw;
+    cursor: pointer;
+    transition: transform 0.3s ease-in;
+}
+#cd-cat h6:hover{
+   transform: scale(0.9);
+}
+
+#cd-cat h6 span{
+    width: 10px;
+    border-radius: 50px;
+    height: 10px;
+    background-color: #ff3f33;
+    display: inline-block;
+    animation: cat 1s infinite;
+}
+@keyframes cat {
+    0% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#cd-cat h6 i{
+    font-size: 1.2vw;
+    font-weight: 200;
+    color: #ff3f33;
+}
+
+#cd-img{
+    flex: 1 1 60%;
+    height: min-content;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+#cd-img img{
+    border-radius: 2vw;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 4vw;
+    height: 4vw;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#video .icon i{
+    color: white;
+    font-size: 2vw;
+    transition: color 0.3s;
+}
+
+#video .icon:hover > i{
+    color: #ff3f33;
+}
+
+#cd-price h3{
+font-size: 2vw;
+color: #ff3f33;
+font-family: 'nmr';
+}
+
+#cd-price h3 span{
+    color: #000;
+    font-family: 'inter', sans-serif;
+}
+
+#cd-button{
+    margin: 1.5vw 0;
+}
+
+.buy{
+    background-color: #ff3f33;
+    color: white;
+    padding: 1vw 1.5vw;
+    border: none;
+    font-size: 1.2vw;
+    font-family: 'inter', sans-serif;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#cd-min-des{
+    margin: 0.5vw 0;
+}
+#cd-min-des p{
+    font-size: 1.2vw;
+    color: #333;
+}
+
+/* slider */
+
+#text-slide{
+    display: flex;
+    margin: 2vw 0;
+    gap: 2vw;
+    overflow: hidden;
+}
+.slider{
+    display: flex;
+    gap: 2vw;
+    margin: 2vw 0;
+    animation: slide 30s infinite linear;
+    animation-delay: 1s;
+    cursor: pointer;
+}
+.slider:hover{
+    animation-play-state: paused;
+}
+.slider-text h2{
+    font-size: 4vw;
+    white-space: nowrap;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    color: #ff3f33;
+}
+.slider-text h2 span{
+    font-weight: 300;
+    font-style: italic;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+    
+}
+
+
+
+/* Projects */
+#projects {
+    padding: 2vw;
+    background-color: #ff3f33;
+    border-radius: 2vw;
+}
+
+.big-title {
+    font-size: 8vw;
+    font-weight: 800;
+    line-height: 1.05;
+}
+
+.small-title {
+    font-size: 2vw;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: #fff;
+}
+
+.project {
+    flex-shrink: 0;
+    width: 80vw;
+    margin:1vw;
+    border-radius: 2.5vw;
+    scroll-snap-align: center;
+    position: relative;
+    background-color: #ddd;
+    padding: 1.5vw;
+}
+.project img{
+    width: 100%;
+    border-radius: 2vw;
+    object-fit: cover;
+    object-position: center;
+}
+
+.project-details{
+    margin: 1vw 0;
+}
+
+.pd-title{
+    font-size: 4vw;
+    font-weight: 800;
+    text-shadow: 0px 0px 10px #fff;
+    text-align: center;
+    /* color: #fff; */
+}
+
+/* Curriculum Section */
+#curriculum ul li {
+    padding: 5px 0;
+}
+
+
+/* FAQ Section */
+.faq h4 {
+    margin: 10px 0;
+    color: #ff3f33;
+}
+
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    #cd-top {
+        flex-direction: column;
+    }
+
+}

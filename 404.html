@@ -3,23 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>YTSchool | Learn Tech Skills & Build Your Digital Future</title>
+    <title>404 Error | YTSchool</title>
     <meta
       name="description"
-      content="YTSchool offers high-quality, affordable tech courses in web development, Graphic design, Digital Marketing and more. Join 500+ alumni and build your digital career with us today!"
+      content="The page you're looking for doesn't exist. Return to YTSchool homepage to explore our courses and resources."
     />
-    <link rel="canonical" href="https://www.ytschool.in" />
+    <link rel="canonical" href="https://www.ytschool.in/404" />
 
-    <meta
-      property="og:title"
-      content="YTSchool | Learn Tech Skills & Build Your Digital Future"
-    />
+    <meta property="og:title" content="404 Error | YTSchool" />
     <meta
       property="og:description"
-      content="Join YTSchool and start learning web development, Graphic design, Digital Marketing and more. Build your career with real-world projects and expert mentors!"
+      content="The page you're looking for doesn't exist. Return to YTSchool homepage to explore our courses and resources."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.ytschool.in" />
+    <meta property="og:url" content="https://www.ytschool.in/404" />
     <!-- <meta property="og:image" content="https://www.ytschool.com/images/og-image.jpg" /> -->
 
     <!-- fontawesome -->
@@ -29,56 +26,62 @@
     />
 
     <!-- custom styles -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/home.css" />
   </head>
   <body>
     <div id="main">
       <div id="page1">
         <div id="nav">
-          <div id="nav-left"><div id="logo">YTSchool</div></div>
+          <div id="nav-left">
+            <div id="logo" onclick="location.href='/'">
+              <img src="assets/img/logo.png" alt="" /> YTSchool
+            </div>
+          </div>
           <div id="nav-right">
-            <div class="button1">Contact us</div>
+            <div class="button1" onclick="window.location='https://wa.me/917361072654'">
+              <h3>Contact us</h3>
+            </div>
           </div>
         </div>
 
-<div id="error">
-    <div id="error-message"></div>
-      <h1>Error 404</h1>
-      <p>The page you're looking for doesn't exist.</p>
-      <a href="/" class="button1">Back to Home</a>
-    </div>
-  </div>
-
-
-
-
-
-
-
+        <div id="error">
+          <div id="error-message"></div>
+          <h1>Error 404</h1>
+          <p>The page you're looking for doesn't exist.</p>
+          <a href="/" class="button1"><h3>Back to Home</h3></a>
+        </div>
+      </div>
 
       <div id="footer">
         <div id="footer-warper">
           <div id="footer-left">
             <div id="fl-logo">
-              <h1>YTSchool</h1>
-            </div>
-            <div id="fl-links">
-              <h3>Pages</h3>
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
+              <!-- <h1>YTSchool</h1> -->
+              <img
+                onclick="window.location='./'"
+                src="./assets/img/black.png"
+                alt=""
+              />
             </div>
           </div>
           <div id="footer-right">
+            <div id="fl-links">
+              <h3>Pages</h3>
+              <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="./#courses">Courses</a></li>
+                <li><a href="./#about">About</a></li>
+                <li><a href="https://wa.me/917361072654">Contact</a></li>
+              </ul>
+            </div>
+
             <div id="fr-social">
               <h3>Social Media</h3>
               <ul>
-                <li>
+                <!-- <li>
                   <a href="#"><i class="ri-facebook-fill"></i> Facebook</a>
-                </li>
+                </li> -->
                 <li>
                   <a href="#"><i class="ri-instagram-fill"></i> Instagram</a>
                 </li>
@@ -93,15 +96,16 @@
           </div>
         </div>
       </div>
+
       <div id="copyright">
-        <p>&copy; 2024 YTSchool. All rights reserved.</p>
+        <p>&copy; 2025 YTSchool. All rights reserved.</p>
 
         <div id="legal">
-          <a href="#">Terms & Conditions</a> |
-          <a href="#">Privacy Policy</a>
+            <a href="./terms-and-service">Terms & Conditions</a> |
+            <a href="./privacy-policy">Privacy Policy</a> |
+            <a href="./refund-policy">Refund Policy</a>
         </div>
       </div>
     </div>
-
   </body>
 </html>
