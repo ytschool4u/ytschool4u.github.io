@@ -10,7 +10,7 @@
     color: #ff3f33;
 }
 
-.section-2 p, li {
+.section-2 p, .section-2 p li {
     font-size: 1vw;
     line-height: 150%;
     margin-bottom: 1vw;

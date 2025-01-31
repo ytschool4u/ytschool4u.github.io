@@ -59,9 +59,8 @@
 
 #hero-center .svg2 {
   position: absolute;
-  width: 7vw;
-  height: 5vw;
-  left: 32%;
+  width: 15vw;
+  left: 25%;
   top: 4vw;
   transition: rotate 0.5s ease;
 }

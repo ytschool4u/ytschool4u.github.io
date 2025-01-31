@@ -53,7 +53,7 @@ img {
 }
 
 /* block animations */
-.blocks-container{
+.blocks-container {
   position: absolute;
   top: 0;
   left: 0;
@@ -62,26 +62,43 @@ img {
   overflow: hidden;
 }
 
-#blocks{
+#blocks {
   width: 105vw;
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
 }
-.block{
+.block {
   width: 30px;
   height: 30px;
-  border: 0.5px solid rgb(0,0,0, 0.05);
+  border: 0.5px solid rgb(0, 0, 0, 0.05);
   transition: border-color 0.3s ease;
 }
 
-.highlight{
+.highlight {
   border-color: #ff3f33;
   background-color: rgb(255, 63, 51, 0.25);
 }
-
-
+.comingSoon {
+  position: relative;
+}
+.comingSoon::after {
+  content: "Coming Soon 👾";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ff3f33;
+  border-radius: 1vw;
+  position: absolute;
+  backdrop-filter: blur(10px);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 236, 198, 0.669);
+}
 
 .button1 {
   background-color: #ff3f33;
@@ -127,7 +144,6 @@ img {
   font-weight: 800;
 }
 
-
 .cd-btn {
   display: flex;
   align-items: center;
@@ -140,7 +156,6 @@ img {
   font-weight: 100;
   font-size: 1.1vw;
 }
-
 
 .button3 {
   background-color: #fc6;
@@ -189,6 +204,41 @@ img {
   z-index: 1000;
 }
 
+#nav-right{
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+.menus{
+  display: flex;
+  gap: 2vw;
+}
+.menu{
+  padding: 0.3vw;
+  position: relative;
+}
+
+.menu::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ff3f33;
+  transition: width 0.3s ease;
+}
+.menu:hover::after{
+  width: 100%;
+}
+
+
+.menus a {
+  font-size: 1.2vw;
+  font-weight: 400;
+}
+
+
 #logo {
   font-size: 2vw;
   font-weight: 700;
@@ -205,8 +255,6 @@ img {
   object-fit: cover;
 }
 /* button is button1 */
-
-
 
 /* COURSE */
 #cor {
@@ -286,6 +334,17 @@ img {
   border-radius: 1vw 1vw 0 0;
   overflow: hidden;
   border-bottom: 1px solid #ff3f33;
+  position: relative;
+}
+
+.course:first::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #fff 0%, #ff3f33 100%);
 }
 
 .c-img {
@@ -474,6 +533,9 @@ img {
     border-bottom: 2px solid #ff3f33;
   }
 
+  .menus{
+    display: none;
+  }
   #logo {
     font-size: 6vw;
     gap: 1vw;
@@ -482,7 +544,6 @@ img {
   #logo img {
     max-width: 7vw;
   }
-
 
   /* COURSE */
 
