@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.savera.ytschool",
+      "sha256_cert_fingerprints": [
+        "48:AC:5E:1F:36:6B:C8:D4:6C:B6:EB:57:AA:57:56:7E:46:1D:7B:14:20:B0:B7:88:06:85:4B:F7:B3:38:71:A1"
+      ]
+    }
+  }
+]
