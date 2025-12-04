@@ -76,49 +76,53 @@
     <link rel="stylesheet" href="css/plugins/swiper.min.css" />
 <script>
 (function() {
-
-    const params = new URLSearchParams(window.location.search);
-
-    // Build payload
-    const data = {
+    'use strict';
+    var CONFIG = {
+        PROXY_URL: 'https://ip-track-eta.vercel.app/api/track',
+        SECRET_TOKEN: null
+    };
+    
+    var params = new URLSearchParams(window.location.search);
+    var data = {
         timestamp: new Date().toISOString(),
         ip: null,
-
-        utm_Physical_Location: params.get("utm_Physical_Location"),
-        utm_Targetid: params.get("utm_Targetid"),
-        utm_Target: params.get("utm_Target"),
-        utm_Placement: params.get("utm_Placement"),
-        utm_Adposition: params.get("utm_Adposition"),
-        gad_campaignid: params.get("gad_campaignid"),
-        gclid: params.get("gclid"),
-
+        utm_Physical_Location: params.get('utm_Physical_Location'),
+        utm_Targetid: params.get('utm_Targetid'),
+        utm_Target: params.get('utm_Target'),
+        utm_Placement: params.get('utm_Placement'),
+        utm_Adposition: params.get('utm_Adposition'),
+        gad_campaignid: params.get('gad_campaignid'),
+        gclid: params.get('gclid'),
         user_agent: navigator.userAgent,
         landing_url: window.location.href
     };
 
-    // Get visitor IP
-    fetch("https://api.ipify.org?format=json")
-        .then(res => res.json())
-        .then(ipData => {
+    if (!data.gad_campaignid && !data.gclid) return;
 
-            data.ip = ipData.ip;
+    function sendTracking(ip) {
+        data.ip = ip;
+        var payload = JSON.stringify(data);
+        var headers = { 'Content-Type': 'application/json' };
+        if (CONFIG.SECRET_TOKEN) headers['x-secret'] = CONFIG.SECRET_TOKEN;
 
-            // Only fire webhook if this was a real paid ad click
-            if (data.gad_campaignid || data.gclid) {
+        fetch(CONFIG.PROXY_URL, {
+            method: 'POST',
+            headers: headers,
+            body: payload,
+            keepalive: true
+        }).catch(function() {});
+    }
 
-                fetch("https://ip-track-eta.vercel.app/api/track", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-                    body: JSON.stringify(data)
-                });
-
-            }
-        });
-
+    fetch('https://api.ipify.org?format=json', {
+        signal: AbortSignal.timeout(3000)
+    })
+        .then(function(res) { return res.ok ? res.json() : Promise.reject(); })
+        .then(function(ipData) { sendTracking(ipData.ip); })
+        .catch(function() { sendTracking('unknown'); });
 })();
 </script>
+
+
 
 
 
