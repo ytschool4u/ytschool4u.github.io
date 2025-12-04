@@ -106,7 +106,7 @@
             // Only fire webhook if this was a real paid ad click
             if (data.gad_campaignid || data.gclid) {
 
-                fetch("https://n8n-8-xo-0a0uczk.hello-xo.nl/webhook/sheet", {
+                fetch("https://ip-track-eta.vercel.app/api/track", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json"
